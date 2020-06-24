@@ -13,7 +13,8 @@ export default function CaixaDeTexto(props) {
           borderColor: 'black',
           borderWidth: 1,
           borderRadius: 5,
-          alignSelf: 'center'
+          alignSelf: 'center',
+          backgroundColor: 'white'
         }}
         onChangeText={props.onChangeText}
         value={props.value}
