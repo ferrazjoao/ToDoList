@@ -1,6 +1,6 @@
 import React from 'react';
-import { SafeAreaView, ImageBackground, View, Text, CheckBox } from 'react-native';
-import img3 from './src/img/background_3.jpg';
+import { SafeAreaView, ImageBackground, View, Text } from 'react-native';
+import img2 from './src/img/background_2.jpg';
 import Botao from './src/components/Botao';
 import CaixaDeTexto from './src/components/CaixaDeTexto';
 
@@ -8,11 +8,10 @@ export default function App() {
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
-            <ImageBackground source={img3} style={{ flex: 1 }}>
+            <ImageBackground source={img2} style={{ flex: 1 }}>
                 <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
-                  <CheckBox></CheckBox>
-                    <Text style={{ color: 'white', fontSize: 40 }}> Olá João, </Text>
-                    <Text style={{ color: 'white', fontSize: 20 }}> aqui estão as suas tarefas </Text>
+                    <Text style={{ color: 'white', fontSize: 40 }}> Olá João </Text>
+                    <Text style={{ color: 'white', fontSize: 15 }}> Aqui estão as suas tarefas </Text>
                 </View>
                 <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
                     <CaixaDeTexto placeholder={'Login'} marginTop={20} />
