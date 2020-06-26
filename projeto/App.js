@@ -1,27 +1,40 @@
 import React from 'react';
-import { SafeAreaView, ImageBackground, View, Text, CheckBox } from 'react-native';
-import img3 from './src/img/background_3.jpg';
-import Botao from './src/components/Botao';
-import CaixaDeTexto from './src/components/CaixaDeTexto';
+import { CheckBox } from 'react-native-elements'
+import { SafeAreaView } from 'react-native';
 
 export default function App() {
-
+  
     return (
-        <SafeAreaView style={{ flex: 1 }}>
-            <ImageBackground source={img3} style={{ flex: 1 }}>
-                <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
-                  <CheckBox></CheckBox>
-                    <Text style={{ color: 'white', fontSize: 40 }}> Olá João, </Text>
-                    <Text style={{ color: 'white', fontSize: 20 }}> aqui estão as suas tarefas </Text>
-                </View>
-                <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
-                    <CaixaDeTexto placeholder={'Login'} marginTop={20} />
-                    <CaixaDeTexto placeholder={'E-mail'} marginTop={20} />
-                </View>
-                <View style={{ alignItems: "center", justifyContent: "center", flex: 1, marginBottom: 100 }}>
-                    <Botao text={'Cadastrar'} />
-                </View>
-            </ImageBackground>
-        </SafeAreaView>
-    )
+<SafeAreaView>
+<CheckBox
+  title='Click Here'
+  checked={this.state.checked}
+/>
+
+<CheckBox
+  center
+  title='Click Here'
+  checked={this.state.checked}
+/>
+
+<CheckBox
+  center
+  title='Click Here'
+  checkedIcon='dot-circle-o'
+  uncheckedIcon='circle-o'
+  checked={this.state.checked}
+/>
+
+<CheckBox
+  center
+  title='Click Here to Remove This Item'
+  iconRight
+  iconType='material'
+  checkedIcon='clear'
+  uncheckedIcon='add'
+  checkedColor='red'
+  checked={this.state.checked}
+/>
+</SafeAreaView>
+)
 }
